@@ -122,9 +122,9 @@ footer p {
   body {
     display: grid;
     grid-template-areas:
-    "banner banner banner"
-    "main main main"
-    "footer"
+      "banner banner banner"
+      "main main main"
+      "footer";
   }
 
   header {
@@ -166,6 +166,7 @@ footer p {
   header nav {
     grid-column: 3/4;
     grid-row: 1/2;
+    align-items: center;
   }
 
   header ul {
@@ -177,6 +178,7 @@ footer p {
   main {
     display: flex;
     justify-content: space-between;
+    margin: 0;
   }
 
   div > a {
@@ -190,3 +192,17 @@ footer p {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
+
+}
+
+@media only screen and (min-width: 62.5rem) {
+
+  header p {
+    margin: 0 15rem;
+  }
+
+  header h3 {
+    margin: 0 15rem;
+  }
+
+}
